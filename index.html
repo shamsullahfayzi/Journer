@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+overflow-x:hidden;        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            height: 10%;
+        }
+        .form-row{
+            margin: 10px;
+        }
+        .box {
+  display: flex;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 2;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  form-container">
+                <form id="entry_form">
+                    <h class="m-2">New Entry</h5>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="pair" required placeholder="Pair">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="entry"required placeholder="Entry">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="invalidation" required placeholder="Invalidation">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="exit" required placeholder="Exit">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="entry_reason" required placeholder="Entry reason">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="datetime-local" class="form-control" id="entry_date" required placeholder="Entry date">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input class="form-control" type="file" id="img" required placeholder="Image">
+                        </div>  
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center m-3">
+        <h3>Entries</h3>
+    </div>
+    <div class="row">
+   
+        <div class="card box col-3" >
+            <img class="card-img-top" src="assets/AUDUSD_2023-08-05_08-03-08_ebe52.png" alt="Card image cap">
+            <div class="card-body">
+              <h6 class="card-title">AUD/UDS Long</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      
+          <div class="card box col-3">
+            <img class="card-img-top" src="assets/AUDUSD_2023-08-05_08-03-08_ebe52.png" alt="Card image cap">
+            <div class="card-body">
+              <h6 class="card-title">GBP/JPY SHORT</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      
+          <div class="card box col-3">
+            <img class="card-img-top" src="assets/AUDUSD_2023-08-05_08-03-08_ebe52.png" alt="Card image cap">
+            <div class="card-body">
+              <h6 class="card-title">XAU/USD SHORT</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      
+           
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+    <script src="/js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</body>
+</html>
